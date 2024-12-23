@@ -2,9 +2,9 @@
 from machine import PWM, Pin,ADC
 import time
 import utime
-from dcmotor import DCMotor
-from servo import Servo
-
+from lib.dcmotor import DCMotor
+from lib.servo import Servo
+from lib.ota import OTA
 
 # initialize OTA
 
