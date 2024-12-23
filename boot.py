@@ -4,7 +4,7 @@ import time
 import utime
 from lib.dcmotor import DCMotor
 from lib.servo import Servo
-from lib.ota import OTA
+from lib.ota import OTAUpdater
 
 # initialize OTA
 
