@@ -69,7 +69,7 @@ def Feedback():
     else:
         pass
         
-    #check_fire()
+    check_fire()
 
 
 
@@ -145,31 +145,8 @@ def check_fire():
 
 while True:
     
-    valR = r_sensor.read()
-    valL = l_sensor.read()
-    valC = c_sensor.read()
-    
-    if (valC < valR and valC < valL):
-
-        TurnForward()
-    elif (valR < valC and valR < valL):
-
-        TurnLeft()
-    elif (valL < valC and valL < valR):
-
-        TurnRight()
-    elif (valC == 4095 and valL == 4095 and valR == 4095):
-        TurnStop()
-    else:
-        TurnStop()
-        
-    check_fire()
+    Feedback()
     time.sleep(0.00001)
 
  
-
-    
- 
-
-
 
